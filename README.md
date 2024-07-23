@@ -2,11 +2,11 @@
 Primeiro Token do Zero nos Padrões Web3
 
 ## Objetivo
-Com o apoio do professor **Ricardo Zago** iremos construir o primeiro token em homenagem a minha cidade Mafra/SC.
+Com o apoio do professor **Ricardo Zago** construir o primeiro token em homenagem a minha cidade Mafra/SC.
 
 ## Finalidade
-Este token poderia ser distribuido aos alunos de cada escola que arrecadassem mais lixo reciclável, por exemplo, e no final do ano a aescola que tivesse mais tokens canharia um dia no parque com guloseimas e brincadeiras.
-A prefeitura também poderia pagar os trabalhos voluntários dos pais com este token para incentivar a participação da comunidade na escola.
+Este token poderia ser distribuído aos alunos de cada escola que arrecadassem mais lixo reciclável, por exemplo, e no final do ano a escola que acumulasse mais tokens, ganharia um dia no parque com guloseimas e brincadeiras.
+A prefeitura também poderia pagar os trabalhos voluntários dos pais com este token, para incentivar a participação da comunidade na escola.
 
 ## Tecnologias utilizadas
  * Ide Remix https://remix.ethereum.org/
@@ -139,6 +139,9 @@ contract MAFToken is ERC20Interface, SafeMath {
 
 - Terceiro, acessei o remix e compilei o código do smart contract que cria o token.
 ![localImage](./img/02.png)
+
 Como resultado foi adicionado 1000 MAFToken em minha carteira.
+![localImage](./img/03.png)
 
-
+O token ficou funcional e as operações de transferência estão na figura abaixo
+![localImage](./img/04.png)
