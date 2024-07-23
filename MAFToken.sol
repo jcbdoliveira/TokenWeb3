@@ -1,20 +1,3 @@
-# MAFToken
-Primeiro Token do Zero nos Padrões Web3
-
-## Objetivo
-Com o apoio do professor **Ricardo Zago** iremos construir o primeiro token em homenagem a minha cidade Mafra/SC.
-
-## Finalidade
-Este token poderia ser distribuido aos alunos de cada escola que arrecadassem mais lixo reciclável, por exemplo, e no final do ano a aescola que tivesse mais tokens canharia um dia no parque com guloseimas e brincadeiras.
-A prefeitura também poderia pagar os trabalhos voluntários dos pais com este token para incentivar a participação da comunidade na escola.
-
-## Tecnologias utilizadas
- * Ide Remix https://remix.ethereum.org/
- * Metamask https://metamask.io/
- * Faucet https://blastapi.io/faucets/ethereum-holesky
-
- ## Smart contract
-```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.26;
  
@@ -77,7 +60,7 @@ contract MAFToken is ERC20Interface, SafeMath {
  
     constructor() public {
         symbol = "MAF";
-        name = "Mafra-SC Coin";
+        name = "Mafra Coin";
         decimals = 2;
         _totalSupply = 100000;
         balances[0x340F5d588dd2B3d61065cFb04132024f8F7c34CD] = _totalSupply;
@@ -128,17 +111,3 @@ contract MAFToken is ERC20Interface, SafeMath {
         revert();
     }
 } 
-```
-
-## Dinamica do estudo
-
-- Primeiro, criei uma carteira Web3 no metamask e conectei na rede teste https://eth-holesky.public.blastapi.io.
-
-- Segundo, acessei o faucet desta rede e peguei alguns tokens de teste para executar o contrato.
-![localImage](./img/01.png)
-
-- Terceiro, acessei o remix e compilei o código do smart contract que cria o token.
-![localImage](./img/02.png)
-Como resultado foi adicionado 1000 MAFToken em minha carteira.
-
-
